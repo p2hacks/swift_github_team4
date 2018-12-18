@@ -11,6 +11,9 @@ import UIKit
 
 class View5Controller: UIViewController {
 
+    @IBAction func changebutton(_ sender: UIButton) {
+        view.backgroundColor = UIColor.purple
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
