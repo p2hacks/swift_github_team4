@@ -10,6 +10,9 @@ import UIKit
 
 class View4Controller: UIViewController {
 
+    @IBAction func changeButton(_ sender: UIButton) {
+        view.backgroundColor = UIColor.yellow
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
