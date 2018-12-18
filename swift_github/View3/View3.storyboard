@@ -18,15 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szh-1O-4KN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szh-1O-4KN">
                                 <rect key="frame" x="165" y="323" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-Ui-ZXZ">
+                                <rect key="frame" x="164" y="400" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeButton:" destination="eod-cv-MfP" eventType="touchUpInside" id="h0Y-kO-ltF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vw1-Ui-ZXZ" firstAttribute="top" secondItem="szh-1O-4KN" secondAttribute="bottom" constant="56" id="7on-hW-sz5"/>
+                            <constraint firstItem="szh-1O-4KN" firstAttribute="centerY" secondItem="0Wh-nc-VjZ" secondAttribute="centerY" id="GNF-LP-OKy"/>
+                            <constraint firstItem="Vw1-Ui-ZXZ" firstAttribute="centerX" secondItem="0Wh-nc-VjZ" secondAttribute="centerX" id="lep-An-Ps8"/>
+                            <constraint firstItem="Vw1-Ui-ZXZ" firstAttribute="leading" secondItem="4Nz-sf-HH5" secondAttribute="leading" constant="164" id="q3T-1t-eIS"/>
+                            <constraint firstItem="szh-1O-4KN" firstAttribute="leading" secondItem="4Nz-sf-HH5" secondAttribute="leading" constant="165" id="s0A-bX-DNI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Nz-sf-HH5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="View3" id="3QA-40-Mcm"/>
