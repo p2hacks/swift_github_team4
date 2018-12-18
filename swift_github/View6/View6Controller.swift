@@ -10,6 +10,10 @@ import UIKit
 
 class View6Controller: UIViewController {
 
+    @IBAction func changeBottun(_ sender: UIButton) {
+        view.backgroundColor=UIColor.red
+    }
+    @IBOutlet var changeBottun: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
